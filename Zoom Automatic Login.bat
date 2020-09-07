@@ -1,0 +1,1 @@
+start "C:\Users\%USERNAME%\AppData\Local\Programs\Python\Python38\python.exe" "D:\Program Files (x86)\Zoom-Automatic-Login\Zoom Automatic Login.pyw"
