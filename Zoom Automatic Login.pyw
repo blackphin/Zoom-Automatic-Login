@@ -20,12 +20,10 @@ def auto_join(i,p):
     time.sleep(2)
     pyautogui.write(message=p)
     pyautogui.press("enter")
-    time.sleep(10)
+    time.sleep(20)
     pyautogui.hotkey("win","up")
     time.sleep(0.5)
     pyautogui.hotkey("win","d")
-    time.sleep(2400)
-    os.system("taskkill /IM Zoom.exe /T /F")
 no=3#int(input("Enter number of classes: "))
 '''for x in range (no):
     mid=str(input("Enter ID: "))
