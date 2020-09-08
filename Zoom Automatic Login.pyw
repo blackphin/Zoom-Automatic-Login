@@ -1,24 +1,31 @@
 import pyautogui,time,datetime,os
 credentials={"6787682929":"rajan19","6148658883":"1212","8483186991":"004734"}
-timel=["1001","1051","1200"]
+timel=["0950","1058","1200"]
 def auto_join(i,p):
     pyautogui.hotkey("win","d")
+    time.sleep(0.5)
     pyautogui.press("win")
+    time.sleep(0.5)
     pyautogui.write(message="start zoom")
+    time.sleep(0.5)
     pyautogui.press("enter")
     time.sleep(1)
     pyautogui.click(x=956,y=573)
+    time.sleep(0.5)
     pyautogui.click(x=1155,y=518)
     time.sleep(5)
     pyautogui.hotkey("win","up")
     time.sleep(0.5)
     pyautogui.click(x=717,y=57)
+    time.sleep(0.5)
     pyautogui.click(x=774,y=425)
     time.sleep(1)
     pyautogui.write(message=i)
+    time.sleep(0.5)
     pyautogui.press("enter")
     time.sleep(2)
     pyautogui.write(message=p)
+    time.sleep(0.5)
     pyautogui.press("enter")
     time.sleep(20)
     pyautogui.hotkey("win","up")
@@ -52,5 +59,4 @@ for y in range (no):
     else:
         print(f'Waiting {wait_time} seconds until {when}')
         time.sleep(wait_time)
-        os.system("taskkill /IM Zoom.exe /T /F")
         auto_join(i,p)
