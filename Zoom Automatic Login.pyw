@@ -2,6 +2,7 @@ import pyautogui,time,datetime,os
 credentials={"6787682929":"rajan19","6148658883":"1212","8483186991":"004734"}
 timel=["1000","1050","1200"]
 def auto_join(i,p):
+    pyautogui.FAILSAFE=False
     pyautogui.hotkey("win","d")
     time.sleep(0.5)
     pyautogui.press("win")
